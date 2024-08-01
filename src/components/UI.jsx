@@ -78,10 +78,10 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 		<>
 			<main className='pointer-events-none select-none z-10 fixed inset-0 flex justify-between flex-col'>
 				<div className='p-5 pointer-events-auto'>
-					<h1 className='text-5xl font-light'>
-						BATMAN <span className='text-xl'>2011</span>
-					</h1>
-					<p className='text-3xl font-light'>issue #01</p>
+					<h1 className='text-5xl font-light'>NINTENDO POWER</h1>
+					<p className='text-xl font-light'>
+						2011
+					</p>
 					<a
 						className='text-red-900 font-medium'
 						href='https://www.TysonSkakun.dev'
