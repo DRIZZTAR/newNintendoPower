@@ -77,8 +77,8 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 	return (
 		<>
 			<main className='pointer-events-none select-none z-10 fixed inset-0 flex justify-between flex-col'>
-				<div className='p-5 pointer-events-auto text-white'>
-					<h1 className='text-5xl font-light'>NINTENDO POWER</h1>
+				<div className='p-4 pointer-events-auto text-slate-700'>
+					<h1 className='gradient-text text-4xl font-light'>NINTENDO POWER</h1>
 					<p className='text-xl font-thin'>Special Edition</p>
 					<p className='text-xl font-thin'>1998</p>
 					<a
@@ -89,12 +89,12 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 						TysonSkakun.Dev
 					</a>
 				</div>
-				<div className='w-full overflow-auto pointer-events-auto flex justify-center'>
+				<div className='w-full font-inter overflow-auto pointer-events-auto flex justify-center'>
 					<div className='overflow-auto flex items-center gap-4 max-w-full p-5'>
 						{[...pages].map((_, index) => (
 							<button
 								key={index}
-								className={`border-transparent hover:border-white transition-all duration-300 px-4 py-3 rounded-full text-lg uppercase shrink-0 border ${
+								className={`border-transparent hover:border-white transition-all duration-300 px-4 py-2 rounded-full text-lg uppercase shrink-0 border ${
 									index === page
 										? 'bg-white/90 text-black'
 										: 'bg-black/30 text-white'
@@ -105,7 +105,7 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							</button>
 						))}
 						<button
-							className={`border-transparent hover:border-white transition-all duration-300 px-4 py-3 rounded-full text-lg uppercase shrink-0 border ${
+							className={`border-transparent font-inter hover:border-white transition-all duration-300 px-4 py-3 rounded-full text-lg uppercase shrink-0 border ${
 								page === pages.length
 									? 'bg-white/90 text-black'
 									: 'bg-black/30 text-white'
@@ -139,7 +139,16 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							Hire Me
 						</a>
 					</div>
-					<div className='menu-item font-bold'>Caught One?</div>
+					<div className='menu-item font-bold'>
+						{' '}
+						<a
+							href='https://batman-omega.vercel.app/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							See Another Book
+						</a>
+					</div>
 					<div className='menu-item font-bold'>Caught Em all?</div>
 					<div className='menu-item font-bold'>Catch Em Again</div>
 				</div>

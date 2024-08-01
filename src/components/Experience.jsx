@@ -55,10 +55,10 @@ export const Experience = () => {
 				> */}
 				<Book position={[0, 0, 0]} />
 				<rectAreaLight
-					intensity={4}
+					intensity={6}
 					width={1.0}
-					height={0.85}
-					color='#ff99ff'
+					height={1.3}
+					color='#ffaaff'
 					position={[0, 0.55, -1.55]}
 					rotation={[0.1, Math.PI, 0]}
 				/>
@@ -72,11 +72,14 @@ export const Experience = () => {
 				enablePan={true}
 			/>
 			{/* {showEnvironment &&  */}
-			<Environment background preset='apartment' />
+			<Environment
+				preset='city'
+				environmentIntensity={0.6}
+			/>
 			{/* } */}
 			<directionalLight
 				position={[2, 5, 2]}
-				intensity={1}
+				intensity={2}
 				castShadow
 				shadow-mapSize-width={2048}
 				shadow-mapSize-height={2048}
@@ -84,7 +87,7 @@ export const Experience = () => {
 			/>
 			<mesh position-y={-1.5} rotation-x={-Math.PI / 2} receiveShadow>
 				<planeGeometry args={[100, 100]} />
-				<shadowMaterial transparent opacity={0.09} />
+				<shadowMaterial color={"white"} transparent opacity={0.04} />
 			</mesh>
 		</>
 	);
