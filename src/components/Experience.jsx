@@ -72,7 +72,7 @@ export const Experience = () => {
 				enablePan={true}
 			/>
 			{/* {showEnvironment &&  */}
-			<Environment preset='apartment' />
+			<Environment background preset='apartment' />
 			{/* } */}
 			<directionalLight
 				position={[2, 5, 2]}

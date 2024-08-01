@@ -5,37 +5,37 @@ import ScrollingText from './ScrollingText.jsx';
 
 export const pageAtom = atom(0);
 // Function to determine if a page should be a web page
-const isWebPage = (index) => {
-  // Example: Make every 5th page a web page
-  return (index % 5 === 0 && index !== 0 && index !== pictures.length - 1);
+const isWebPage = index => {
+	// Example: Make every 5th page a web page
+	return index % 5 === 0 && index !== 0 && index !== pictures.length - 1;
 };
 
 // Function to get web URL for a page
-const getWebUrl = (index) => {
-  // Example: Rotate through a set of URLs
-  const urls = ['https://www.tysonskakun.dev'];
-  return urls[index % urls.length];
+const getWebUrl = index => {
+	// Example: Rotate through a set of URLs
+	const urls = ['https://www.tysonskakun.dev'];
+	return urls[index % urls.length];
 };
 
 export const pages = [
-  {
-    front: 'cover',
-    back: pictures[0],
-  },
+	{
+		front: 'cover',
+		back: pictures[0],
+	},
 ];
 
 for (let i = 1; i < pictures.length - 1; i += 2) {
-  pages.push({
-    front: pictures[i % pictures.length],
-    back: pictures[(i + 1) % pictures.length],
-    isWebPage: isWebPage(i),
-    webUrl: isWebPage(i) ? getWebUrl(i) : undefined,
-  });
+	pages.push({
+		front: pictures[i % pictures.length],
+		back: pictures[(i + 1) % pictures.length],
+		isWebPage: isWebPage(i),
+		webUrl: isWebPage(i) ? getWebUrl(i) : undefined,
+	});
 }
 
 pages.push({
-  front: pictures[pictures.length - 1],
-  back: 'back',
+	front: pictures[pictures.length - 1],
+	back: 'back',
 });
 
 export const UI = ({ toggleEnvironment, showEnvironment }) => {
@@ -77,13 +77,12 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 	return (
 		<>
 			<main className='pointer-events-none select-none z-10 fixed inset-0 flex justify-between flex-col'>
-				<div className='p-5 pointer-events-auto'>
+				<div className='p-5 pointer-events-auto text-white'>
 					<h1 className='text-5xl font-light'>NINTENDO POWER</h1>
-					<p className='text-xl font-light'>
-						2011
-					</p>
+					<p className='text-xl font-thin'>Special Edition</p>
+					<p className='text-xl font-thin'>1998</p>
 					<a
-						className='text-red-900 font-medium'
+						className=' text-slate-400 font-medium'
 						href='https://www.TysonSkakun.dev'
 						target='_blank'
 					>
@@ -140,9 +139,9 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							Hire Me
 						</a>
 					</div>
-					<div className='menu-item font-bold'>Issues</div>
-					<div className='menu-item font-bold'>Report A Crime</div>
-					<div className='menu-item font-bold'>Batsignal Queue</div>
+					<div className='menu-item font-bold'>Caught One?</div>
+					<div className='menu-item font-bold'>Caught Em all?</div>
+					<div className='menu-item font-bold'>Catch Em Again</div>
 				</div>
 			</div>
 		</>

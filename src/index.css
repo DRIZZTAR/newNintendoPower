@@ -13,8 +13,8 @@ body {
 	margin: 0;
 	background: radial-gradient(
 		ellipse at center,
-		rgb(0, 0, 0) 0%,
-		rgb(255, 255, 255) 70%
+		rgb(179, 255, 0) 0%,
+		rgb(0, 0, 0) 100%
 	);
 	font-family: 'Poppins', sans-serif;
 }
@@ -22,7 +22,6 @@ body {
 .outline-text {
 	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
 }
-
 
 .hamburger {
 	width: 35px;
@@ -40,13 +39,14 @@ body {
 .hamburger div {
 	width: 100%;
 	height: 4px;
-	background-color: #333;
+	background-color: #ff1111b0;
 	border-radius: 10px;
 	transition: all 0.3s ease;
 }
 
 .hamburger.active div:nth-child(1) {
-	transform: translateY(10px) rotate(135deg);
+	transform: translateY(10px) rotate(-135deg) scale(0.8);
+	background-color: #063eb6;
 }
 
 .hamburger.active div:nth-child(2) {
@@ -54,7 +54,8 @@ body {
 }
 
 .hamburger.active div:nth-child(3) {
-	transform: translateY(-10px) rotate(-135deg);
+	transform: translateY(4px) translateX(0px) rotate(135deg) scale(0.8);
+	background-color: #063eb6;
 }
 
 .menu {
@@ -65,13 +66,13 @@ body {
 	height: 100%;
 	background: linear-gradient(
 		270deg,
-		rgba(0, 0, 0, 0.8) 0%,
-		rgba(36, 36, 36, 1) 100%
+		rgba(189, 170, 170, 0.8) 0%,
+		rgb(165, 154, 154) 100%
 	);
 	box-shadow: -4px 0px 12px rgba(0, 0, 0, 0.3);
 	transform: translateX(100%);
 	transition: transform 0.3s ease-in-out;
-	z-index: 101;
+	z-index: 99;
 	pointer-events: auto; /* Ensure menu is interactive */
 	display: flex;
 	flex-direction: column;
@@ -122,7 +123,6 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-
 	.menu {
 		width: 40%;
 		height: 100%;
