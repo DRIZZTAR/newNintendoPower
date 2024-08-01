@@ -6,4 +6,4 @@
 
 ## Live Demo
 
-Check out the [live demo](https://batman-omega.vercel.app/) of the project.
+Check out the [live demo](https://nintendo-power-pokemon.vercel.app/) of the project.
