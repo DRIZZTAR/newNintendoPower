@@ -55,7 +55,7 @@ export const Experience = () => {
 				> */}
 				<Book position={[0, 0, 0]} />
 				<rectAreaLight
-					intensity={6}
+					intensity={15}
 					width={1.0}
 					height={1.3}
 					color='#ffaaff'

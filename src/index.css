@@ -37,7 +37,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	background: linear-gradient(200deg, #ff0000, #000000, #30c7e9, #5847c4);
 	background-size: 400% 400%;
-	animation: gradientShift 10s ease infinite;
+	animation: gradientShift 18s ease infinite;
 	position: relative;
 	overflow: hidden;
 }
@@ -80,7 +80,7 @@ body::after {
 .gradient-text {
 	background: linear-gradient(200deg, #ff0000, #000000, #30c7e9, #5847c4);
 	background-size: 400% 400%;
-	animation: gradientShift 10s ease infinite;
+	animation: gradientShift 18s ease infinite;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -107,7 +107,7 @@ body::after {
 	height: 4px;
 	background: linear-gradient(200deg, #ff0000, #000000, #30c7e9, #5847c4);
 	background-size: 400% 400%;
-	animation: gradientShift 10s ease infinite;
+	animation: gradientShift 18s ease infinite;
 	border-radius: 10px;
 	transition: all 0.5s ease;
 }
