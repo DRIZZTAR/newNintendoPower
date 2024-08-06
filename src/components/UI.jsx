@@ -78,9 +78,7 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 		<>
 			<main className='pointer-events-none select-none z-10 fixed inset-0 flex justify-between flex-col'>
 				<div className='p-4 pointer-events-auto text-slate-700'>
-					<h1 className='text-4xl font-light'>
-						NINTENDO POWER
-					</h1>
+					<h1 className='text-4xl font-light'>NINTENDO POWER</h1>
 					<p className='gradient-text text-xl font-thin'>
 						Special Edition
 					</p>
@@ -150,11 +148,29 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							See Another Book
+							Batman, Issue #01
 						</a>
 					</div>
-					<div className='menu-item font-bold'>Caught Em all?</div>
-					<div className='menu-item font-bold'>Catch Em Again</div>
+					<div className='menu-item font-bold'>
+						{' '}
+						<a
+							href='https://link-to-the-past.vercel.app/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							Super Nintendo Zelda Manual
+						</a>
+					</div>
+					<div className='menu-item font-bold'>
+						{' '}
+						<a
+							href='https://tysonskakun.dev/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							Personal Site
+						</a>
+					</div>
 				</div>
 			</div>
 		</>
