@@ -134,11 +134,20 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 				<div className='menu-content p-10'>
 					<div className='menu-item font-extrabold'>
 						<a
-							href='https://www.linkedin.com/in/tyson-skakun-tail/'
+							href='https://vogue-silk.vercel.app/'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							Hire Me
+							Vogue
+						</a>
+					</div>
+					<div className='menu-item font-extrabold'>
+						<a
+							href='https://dragon-ball-three.vercel.app/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							DragonBall
 						</a>
 					</div>
 					<div className='menu-item font-bold'>
@@ -148,7 +157,7 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							Batman, Issue #01
+							Batman #01
 						</a>
 					</div>
 					<div className='menu-item font-bold'>
@@ -158,7 +167,7 @@ export const UI = ({ toggleEnvironment, showEnvironment }) => {
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							Super Nintendo Zelda Manual
+							A Link To The Past
 						</a>
 					</div>
 					<div className='menu-item font-bold'>
